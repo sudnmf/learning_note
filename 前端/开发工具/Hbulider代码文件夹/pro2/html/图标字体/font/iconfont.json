@@ -1,0 +1,16 @@
+{
+  "id": "3750773",
+  "name": "he1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "18267905",
+      "name": "安全隐私",
+      "font_class": "anquanyinsi",
+      "unicode": "e98b",
+      "unicode_decimal": 59787
+    }
+  ]
+}

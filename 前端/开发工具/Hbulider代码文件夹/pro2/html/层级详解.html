@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin:0px;
+				padding:0px;
+			}
+			.box1{
+				width:300px;
+				height:400px; 
+				background:red;
+				position:relative;
+				top:100px;
+				left:0px;
+				/* z-index:1; */
+				
+			}
+			.box1 span{
+				position: absolute;
+				width:100px;
+				height:100px; 
+				background:yellow;
+				left:0px;
+				top:300px;
+				z-index:100;
+			}
+			.box2{
+				width:300px;
+				height:400px;
+				background:blue;
+				position:relative;
+				top:10px;
+				/* z-index:1; */
+			}
+			.box2 span{
+				position:absolute; 
+				width:100px;
+				height:100px;
+				background:green;
+				left:10px;
+				top:10px;
+				z-index:0;
+			}	
+		</style>
+	</head>
+	<body>
+		
+		<div class = "box1">
+			<span></span>
+		</div>
+		<div class = "box2">
+			<span></span>
+		</div>
+	</body>
+</html>

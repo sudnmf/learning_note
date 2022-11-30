@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* 
+			层级：也是属性，是属性 z-index z-index 取值范围是整数，默认层级是0
+			当层级相同时，后写的标签会写在先写标签的上面。
+			层级不相同还发生重叠。就是 层级高的压层级低的。
+			当层级是负数时低于标准流。0还是压在标准流上方
+			 */
+			.box{
+				width:800px;
+				height:500px;
+				border:1px solid #000;
+				margin:0 auto;
+				position: relative;
+			}
+			.s1{
+				width:100px;
+				height:30px;
+				background:red;
+				position:absolute;
+				left:0px;
+				top:0px;
+				z-index:2;
+			}
+			.s2{
+				width:100px;
+				height:30px;
+				background:blue;
+				position: absolute;
+				left:60px;
+				top:11px;
+				z-index:0;
+				
+			}
+			.s3{
+				width:100px;
+				height:30px;
+				background:yellow;
+				margin:25px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "box">
+			<span class = "s1">s1</span>
+			<span class = "s2">s2</span>
+			<div class = "s3">s3</div>
+		</div>
+		
+	</body>
+</html>

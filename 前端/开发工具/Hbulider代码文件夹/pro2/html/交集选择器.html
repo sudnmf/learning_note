@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* 交集选择器，三个基本选择器两个连在一起中间不加空格 */
+			/* 能够提权，很少使用 */
+			/* .current{
+				border:1px solid red;
+			} */
+			.box p.current{
+			/*.box p 和 .current 取并集  */	
+				border:1px solid red;
+			}
+			/* 前面后代选择器，后面普通选择器，不能前后都是后代选择器 */
+			/* .box .one.box .current{
+				/*.box .one 和 .box .current 取并集  */
+				border:1px solid red;
+			} */
+			/* 类和类并集 */
+			.one.current{
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "box">
+			<p class="current one">段落</p>
+			<i class="current">倾斜</i>
+			<span>span</span>
+			<ul>
+				<li class = "current">1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+			<ol>
+				<li>11</li>
+				<li>22</li>
+				<li>33</li>
+			</ol>
+		</div>
+	</body>
+</html>

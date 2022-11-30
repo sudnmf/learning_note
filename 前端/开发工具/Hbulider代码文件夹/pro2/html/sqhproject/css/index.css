@@ -1,0 +1,534 @@
+/* 通栏头部 */
+.header-wrap{
+	height:30px;
+	background: #eaeaea;
+}
+.header{
+	width:1200px;
+	height:30px;
+	margin:0 auto;
+	
+}
+.header .left-list{
+	float:left;
+}
+.header .left-list li{
+	line-height:30px;
+	float:left;
+}
+
+.header .left-list .line{
+	float:left;
+	width:1px;
+	height:16px;
+	background:#b3aeae;
+	margin-top: 7px;
+	margin-right:5px;
+}
+
+/* 容器和子元素全都是浮起来的，所以父元素能被撑开来 */
+.header .right-list{
+	float:right;
+}
+.header .right-list a{
+	display:block;
+}
+
+.header .right-list li{
+	line-height:30px;
+	float:right;
+}
+.header .right-list li a {
+	float:left;
+}
+.header .right-list li a {
+	float:left;
+}
+.header .right-list li  a i {
+	float:left;
+}
+.header .right-list li  a span {
+	float:left;
+	margin:0px 7px 0px 5px;
+}
+.header .right-list li em{
+	float:left;
+}
+.header .right-list .line{
+	float:right;
+	width:1px;
+	height:16px;
+	background:#b3aeae;
+	margin-top: 7px;
+	margin-right:9px;
+	margin-left:9px;
+}
+
+
+
+
+
+
+
+/* logo和搜索框 */
+.logoAndSearch{
+	width:1200px;
+	height:100px; 
+	/* background:pink; */
+	margin:0 auto;
+
+}
+.logoAndSearch .logo{
+	float:left;
+	margin:18px 0 0 22px;
+	height:56px;
+	/* overflow:hidden;  在使用图片插入的时候生效*/ 
+	/* 把溢出的字体去除 */
+}
+
+/* 图片使用插入的方式放入 */
+/* .logoAndSearch .logo a{
+	display:block;
+}
+.logoAndSearch .logo a img{
+	display:block;
+	padding-left:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+} */
+/* 使用背景图作为logo */
+.logoAndSearch .logo a{
+	display:block;
+	background:url(../img/Logo.png) no-repeat 1px 2px ;
+	/* 背景图不占位置需要人为设置宽高 */
+	width:175px;
+	height:56px;
+	/* 首行缩进很大的负值，缩进到看不见 */
+	text-indent:-1000px; 
+}
+.logoAndSearch-center{
+	width:560px;
+	height:90px;
+	/* background:yellow; */
+	float:left;
+	margin-left:100px;
+	margin-top:10px;
+	
+}
+.logoAndSearch-center .baby li{
+	float:left;
+	width:36px;
+	height:22px;
+	
+	text-align:center;
+	line-height:22px;
+	/* 鼠标悬浮到该元素上后改变鼠标的图标 */
+	cursor:pointer; 
+	
+}
+.logoAndSearch-center .baby .current{
+	font-weight:700px;
+	/* 设置权重最大，下面 hover属性时保证该属性不会被覆盖 */
+	background:#ea4a36 !important; 
+	/* 也可以把该选择器写成 .logoAndSearch .logoAndSearch-center .baby .current多了一个类名选择器 ，也是提高了权重   */
+	color:#fff;
+}
+.logoAndSearch-center .baby li:hover{
+	background:#FFEEE5;
+}
+
+.logoAndSearch .baby li img{
+	position: absolute;
+	top:-10px;
+	left:21px;
+	width:20px;
+	height:16px;
+}
+
+.logoAndSearch-center .sub form .txt{
+	width:480px;
+	height:28px;
+	border:1px solid #ea4a36;
+	float:left;
+	background:url(../img/fang.png) no-repeat 15px center ;
+	padding-left:10px;
+	/* 圆角属性radius */
+	/* 左上 右上 右下 左下 */
+	border-radius: 20px 0 0 20px;
+}
+.logoAndSearch-center .sub form .btn{
+	float:left;
+	width:66px;
+	height:30px;
+	color:#fff;
+	background:#ea4a36;
+	border-radius: 0 20px 20px 0;
+}
+.logoAndSearch-center .shopping{
+	margin-top:5px;
+}
+.logoAndSearch-center .shopping li{
+	float:left;
+	margin-right:8px;
+}
+
+
+/* 全部商品分类 */
+.all-wrap{
+	height:45px;
+	border-bottom:2px solid #ea4a36;
+}
+.all{
+	width:1200px;
+	height:45px;
+	/* background:pink; */
+	margin: 0 auto;
+	position:relative;
+}
+.all h2{
+	width:210px;
+	height:45px;
+	 background:#ea4a36;
+	float:left;
+	font-size:14px;
+	text-align: center;
+	line-height:45px;
+	font-weight:700px;
+	color:#fff;
+}
+.all ul li{
+	font-size:18px;
+	float:left;
+	line-height: 45px;
+	margin:0 23px;
+}
+
+/* 商品详情 */
+.main{
+	width:1200px;
+	height:461px;
+	/* background:yellow; */
+	margin:0 auto;
+	
+}
+.main .detail{
+	width:210px;
+	height:461px;
+	float:left;
+	background:#fafafa; 
+}
+.main .detail ul li{
+	font-size: 14px;
+	line-height: 30px;
+	height:30px;
+	padding-left:20px;
+	overflow:hidden;
+}
+.main .detail ul li:hover{
+	background-color: darkgrey;
+}
+.main .detail ul li a:hover{
+	/* 出现下划线 */
+	text-decoration: underline; 
+}
+.main .banner{
+	width:730px;
+	height:454px;
+	background:yellowgreen;
+	float: left;
+	margin:5px 0 0 5px;
+	position:relative;
+	/* 鼠标变成指针。 */
+	cursor:pointer;
+}
+.main .banner>span{
+	width:20px;
+	height:30px;
+	background:rgba(0,0,0,0.3);
+	color:#fff;
+	text-align:center;
+	line-height:30px;
+	font-size:24px;
+	border-radius: 0 15px 15px 0 ;
+	position:absolute;
+	top:50%;
+	margin-top:-15px;
+	/* 消失，鼠标移入banner再显示 */
+	display: none;
+	
+}
+.main>.banner>.rightBtn{
+	left:auto;
+	right:0px;
+	border-radius:  15px 0 0 15px  ;
+}
+/* 鼠标移入后让一级后代的span 做什么 */
+.banner:hover>span{
+	display: block;
+}
+.main .banner>ol{
+	position:absolute;
+	left:50%;
+	bottom:15px;
+	background: rgba(255,255,255,0.5);
+	border-radius: 10px;
+	/* margin-left 是为了让其水平居中，-35的值是ol宽度的一半 */
+	margin-left:-35px;
+	
+}
+.main .banner>ol>.current{
+	background-color: red;
+}
+.main .banner>ol>li{
+	float:left;
+	width:8px;
+	height:8px;
+	background:#fff;
+	border-radius: 50%;
+	margin:3px;
+	margin-bottom:2px;
+	/* ol是被li撑开的，但是li本身也要宽度高度 */
+}
+.main .quick{
+	width:250px;
+	height:455px;
+	/* background: yellowgreen; */
+	float:right;
+	margin-top:5px;
+}
+.quick-top{
+	width:248px;
+	height:373px;
+	/* border:1px solid #e4e4e4; */
+}
+.quick-top .tit{
+	height:37px;
+	border-bottom:1px solid  #e4e4e4;
+	margin:0 5px;
+}
+.quick-top .list{
+	height:140px;
+	border-bottom:1px solid #e4e4e4
+}
+.quick-top .service ul li{
+	width:61px;
+	height:64px;
+	border-right:1px solid #e4e4e4;
+	border-bottom:1px solid #e4e4e4;
+	float:left;
+}
+.quick-top .service .width62{
+	border-right:none;
+	width:62px;
+}
+
+.quick .quick-top .service li a{
+	display: block;
+	/*设置成和父元素li同高 */
+	height:100%; 
+	background: url(../img/icons.png) no-repeat ;
+	
+}
+
+
+.menu{
+	width:1200px;
+	height:340px;
+	margin:10px auto 0px;	
+	/* background: yellow; */
+}
+.menu .sq{
+	width:290px;
+	height:340px;
+	background:grey; 
+	float:left;
+	margin-left:200px;
+}
+.menu .sq .top,.menu .ticket .top{
+	margin:13px 0 0 19px;
+}
+
+.menu .sq h3,.menu .ticket h3{
+	float:left; 
+	font-size:24px;
+	color:rgb(51,51,51);
+	font-weight:700px;
+}
+.menu .sq span,.menu .ticket .top span{
+	float:left;
+	width:14px;
+	height:14px;
+	border:1px solid #e8554d;
+	/* 为了让边框呈现圆形，四个角都设置成50% */
+	border-radius: 50%;
+	margin:8px 0 0 16px;
+}
+.menu .center{
+	margin-top: 10px;
+}
+.menu .center li{
+	float:left;
+	margin-right:16px;
+}
+.menu .center li a{
+
+	width:63px;
+	height:20px;
+	 background:#f6f6f6;
+	color:#999;
+	border-radius: 10px;
+	/* 溢出文本强制不换行 */
+	white-space: nowrap;
+	/* 溢出的部分用省略号代替 */
+	text-overflow:ellipsis;
+}
+.menu .center li a:hover{
+	background: #e1251b;
+	color:#fff;
+}
+.menu .center li .current{
+	background:#e1251b;
+	color:#fff;
+}
+
+.menu .bottom li{
+	height:70px;
+	background:pink;
+	padding:0 15px;
+	margin: 10px 0px;
+}
+	
+.menu .bottom li a{
+	display:block;
+	height:70px;
+	margin:16px 0px;
+	/* background:yellow; */
+}
+.menu .bottom li a img{
+	float:left;
+}
+.menu .bottom li a .im01{
+	margin-top:15px;
+	margin-right:12px;
+}
+.menu .bottom li a p{
+	float:left;
+	/* p的宽度需要设置，其元素是float的 */
+	width:140px;
+	height:36px;
+	overflow:hidden;
+	font-size:14px;
+	line-height:18px;
+	margin-top:17px;
+	margin-left:9px;
+}
+.menu .ticket{
+	margin-left:190px;
+	float:left;
+}
+.menu .last{
+	width:290px;
+	height:280px;
+	background: url(../img/bg.png) no-repeat 0 0;
+	margin-top:16px;
+}
+.menu .last ul li{
+	padding:0 15px;
+}
+.menu .last ul li a{
+	display:block;
+	/* background-color: yellow; */
+	height:82px;
+}
+.menu .last ul li a .circle{
+	width:66px;
+	height:66px;
+	background:#fff;
+	border-radius: 50%;
+	float:left;
+	margin:8px 0 0 8px;
+	background:url(../img/shop.webp) no-repeat center center;
+}
+.menu .last ul li a .description{
+	float:left;
+	width:120px;
+	height:75px;
+	color:#e33333;
+	margin-left:10px;
+	
+}
+.menu .last ul li a .description i{
+	font-size:14px;
+	font-family:arial,sans-serif;
+}
+.menu .last ul li a .description .cost span{
+	font-size:28px;
+}
+.menu .last ul li a .description .nine{
+	color:#999;
+	width:65px;
+}
+.menu .last ul li a .description .home{
+	color:#333;
+	margin-top:7px;
+	width:120px;
+}
+.menu .last ul li a .more{
+	float:left;
+	width:12px;
+	margin-left:25px;
+	margin-top:12px;
+	line-height:15px;
+	color:#666;
+	
+}
+.menu .last ul li a em{
+	float:left;
+	margin-top:35px;
+	margin-left:5px;
+}
+.man{
+	width:360px;
+	height:800px;
+	background:url(../img/man.png) no-repeat 0px 0px;
+	position:absolute;
+	left:-360px;
+	top:0px;
+}
+.woman{
+	width:360px;
+	height:800px;
+	background:url(../img/woman.png) no-repeat 0px 0px;
+	position:absolute;
+	right:-360px;
+	top:0px;
+}
+.advLeftButtom{
+	width:360px;
+	height:570px;
+	background: url(../img/qiuLeft.png) no-repeat 0 0;
+	position:fixed;
+	/* 先走浏览器宽度的一半，靠百分比解决不固定的文件，再走通栏宽度的一半+自身的宽度，通栏宽度是我们固定好的所以写具体数值即可 */
+	left:50%;
+	margin-left:-960px;
+	top:0px;
+	z-index:-1;
+}
+.advRightButtom{
+	width:360px;
+	height:570px;
+	background: url(../img/qiuRight.png) no-repeat 0 0;
+	position:fixed;
+	/* 先走浏览器宽度的一半，靠百分比解决不固定的文件，再走通栏宽度的一半+自身的宽度，通栏宽度是我们固定好的所以写具体数值即可 */
+	right:50%;
+	margin-right:-960px;
+	top:0px;
+	z-index:-1;
+}
+body{
+	/*x方向要进行溢出隐藏，希望只进行水平隐藏 */
+	/* overflow-y:hidden; */
+	
+	/* overflow-y:hidden; */
+	/* 垂直方向溢出隐藏 */
+}

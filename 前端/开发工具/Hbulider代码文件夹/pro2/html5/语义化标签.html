@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div[title]{
+				width:100px;
+				height:100px;
+				background: pink;
+			}
+			div[class = "box2"]{
+				height:50px;
+				border:2px solid green;
+			}
+			div[class$="box5"]{
+				height:70px;
+				background-color: blue;
+			}
+			div[class^="box2"]{
+				background:gold;
+				height:70px;
+			}
+			#one[class]{
+				width:100px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		
+		<div class="box1" title>
+			
+		</div>
+		<div class="box2">
+			
+		</div>
+		<div class="box2 box3 box4">
+			
+		</div>
+		<div class="box4 box5">
+			
+		</div>
+		<div class=" box2 box5">
+			
+		</div>
+		<div id="one"></div>
+	</body>
+</html>
